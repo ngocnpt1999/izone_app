@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "727471547863",
+    "firebase_url": "https://izoneapp-4f52a.firebaseio.com",
+    "project_id": "izoneapp-4f52a",
+    "storage_bucket": "izoneapp-4f52a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727471547863:android:22d2e967d0cf4dc8c8d792",
+        "android_client_info": {
+          "package_name": "com.treecho.izone_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727471547863-s14hmfifjl2udr6tfsnesqs6pcf5s17d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnhlvhkoe16_w0aEU1anjX1sgb-TzqVY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727471547863-s14hmfifjl2udr6tfsnesqs6pcf5s17d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

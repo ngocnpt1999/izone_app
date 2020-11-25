@@ -38,25 +38,28 @@ class ListAlbumView extends StatelessWidget {
                       shrinkWrap: true,
                       itemCount: _stateController
                           .mapAlbums[_stateController.listAlbum[index]].length,
-                      itemBuilder: (context, indexx) => Card(
-                        child: ListTile(
-                          leading: Icon(Icons.music_note),
-                          title: Text(_stateController
-                              .mapAlbums[_stateController.listAlbum[index]]
-                                  [indexx]
-                              .name),
-                          onTap: () {
-                            YoutubePlayerController ytbController =
-                                YoutubePlayerController(
-                              initialVideoId: _stateController
-                                  .mapAlbums[_stateController.listAlbum[index]]
-                                      [indexx]
-                                  .ytbID,
-                              flags: YoutubePlayerFlags(),
-                            );
-                            _showYtbPopup(context, ytbController);
-                          },
-                        ),
+                      itemBuilder: (context, indexx) => Column(
+                        children: <Widget>[
+                          Divider(),
+                          ListTile(
+                            leading: Icon(Icons.music_note),
+                            title: Text(_stateController
+                                .mapAlbums[_stateController.listAlbum[index]]
+                                    [indexx]
+                                .name),
+                            onTap: () {
+                              YoutubePlayerController ytbController =
+                                  YoutubePlayerController(
+                                initialVideoId: _stateController
+                                    .mapAlbums[_stateController
+                                        .listAlbum[index]][indexx]
+                                    .ytbID,
+                                flags: YoutubePlayerFlags(),
+                              );
+                              _showYtbPopup(context, ytbController);
+                            },
+                          ),
+                        ],
                       ),
                     ),
                     theme: ExpandableThemeData(

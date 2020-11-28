@@ -36,8 +36,14 @@ class MyHomePage extends StatelessWidget {
           title: Text(this.title),
           bottom: TabBar(
             tabs: <Widget>[
-              Icon(Icons.account_circle),
-              Icon(Icons.music_video),
+              Tab(
+                icon: Icon(Icons.account_circle),
+                text: "Thành viên",
+              ),
+              Tab(
+                icon: Icon(Icons.music_video),
+                text: "Album",
+              ),
             ],
           ),
         ),
